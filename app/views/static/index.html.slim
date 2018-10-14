@@ -1,4 +1,13 @@
-h1 Static#index
-p Find me in app/views/static/index.html.erb
-div data-controller="hello"
-  h1 data-target="hello.output"
+= container
+  = grid
+    = row
+      = column size: 10, class: 'centered'
+        = segment 'secondary'
+          = h1 class: 'center aligned', text: 'BeastUI + StimulusJS Demo'
+    = row
+      = column size: 10, class: 'centered', data: {controller: 'hello'}
+        = h1 data: {target: "hello.output"}
+    = row
+      = column size: 14, class: 'centered'
+        = segment 'secondary'
+          = h1 class: 'center aligned', text: 'BeastUI + StimulusJS Demo'
